@@ -1,8 +1,9 @@
 [tool.poetry]
-name = "tcc_api"
+name = "FHO_JUDGE"
 version = "0.1.0"
 description = "Judge API"
 authors = ["Caio Santoro <caiosantorodossantos@alunos.fho.edu.br>"]
+packages = [{include = "apps"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"

@@ -1,6 +1,5 @@
 from fastapi import HTTPException, status
-from pydantic.error_wrappers import ErrorWrapper
-
+from pydantic.v1.error_wrappers import ErrorWrapper
 
 class BaseException(Exception):
     message: str = 'Internal server error'
