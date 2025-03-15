@@ -13,7 +13,7 @@ class Settings:
 
     BASE_URL: str = 'http://localhost:8000'
 
-    DATABASE_URL: str = os.environ.get('DATABASE_URL')
+    DATABASE_URL: str = os.environ.get('DATABASE_URL', 'sqlite:///test_db.db')
 
     BEARER_KEY: str = 'MV2022'
 
