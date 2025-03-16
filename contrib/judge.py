@@ -80,6 +80,23 @@ def run_cpp(code, data_input):
         except subprocess.TimeoutExpired:
             pipe.kill()
             return 'TLE'
+        
+# def run_java(code, data_input):
+#     data_entry = base64_decode(data_input)
+#     with tempfile.NamedTemporaryFile(suffix='.java') as tmp:
+#         tmp.write(code)
+#         tmp.file.seek(0)
+#         pipe = subprocess.Popen(
+#             f'javac {tmp.name} && java {tmp.name} && rm {tmp.name}',
+#             stdin=subprocess.PIPE,
+#             stdout=subprocess.PIPE,
+#             shell=True,
+#         )
+#         try:
+#             return pipe.communicate(data_entry, timeout=settings.TLE_TIMEOUT)
+#         except subprocess.TimeoutExpired:
+#             pipe.kill()
+#             return 'TLE'        
 
 
 def judge(response, expected_output: str):
