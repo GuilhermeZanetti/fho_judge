@@ -21,11 +21,14 @@ After this, run the project.
 $ make run
 ```
 
-Antes de rodar alterar a seguinte linha em config.py
+Antes de rodar alterar a seguinte linha em `config.py`
 deixe a linha exatamente assim: 
+```
 DATABASE_URL: str = os.environ.get('DATABASE_URL', 'sqlite:///test_db.db')
+```
 
-
-
+Caso dê erro de instalação em alguma biblioteca ao rodar make run, instale separadamente:
+```shell
 pip install "pydantic<2"
 pip install loguru
+```
