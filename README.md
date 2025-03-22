@@ -29,3 +29,29 @@ DATABASE_URL: str = os.environ.get('DATABASE_URL', 'sqlite:///test_db.db')
 
 pip install "pydantic<2"
 pip install loguru
+
+## Caso de ruim na instalação, altere a versão do Python para 3.10.x
+### MacOS
+
+#### Instale a 3.10
+```sh
+brew install python@3.10
+```
+
+#### Ative essa versão no terminal:
+```sh
+export PATH="/opt/homebrew/opt/python@3.10/bin:$PATH"
+```
+
+#### Verifique novamente a versão do Python:
+```sh
+python --version
+```
+
+#### Criar um Ambiente Virtual
+```sh
+python3 -m venv venv
+source venv/bin/activate
+make setup
+make run
+```
