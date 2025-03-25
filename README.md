@@ -55,3 +55,7 @@ source venv/bin/activate
 make setup
 make run
 ```
+
+# Como realizar as requisições para os endpoints?
+## Autenticação
+No campo Bearer Auth coloque a senha: `MV2022`

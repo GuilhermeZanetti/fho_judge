@@ -2,7 +2,7 @@
 name = "FHO_JUDGE"
 version = "0.1.0"
 description = "Judge API"
-authors = ["Caio Santoro <caiosantorodossantos@alunos.fho.edu.br>"]
+authors = ["Caio Santoro <caiosantorodossantos@alunos.fho.edu.br>", "Guilherme Zanetti <zanetti@alunos.fho.edu.br>", "Giovane Oliveira <giovaneoliveira@alunos.fho.edu.br>"]
 packages = [{include = "apps"}]
 
 [tool.poetry.dependencies]
